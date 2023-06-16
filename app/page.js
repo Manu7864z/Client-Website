@@ -15,8 +15,8 @@ export default function Home() {
         height={700}
       />
       <p>
-        Unsere Glaserei "Glas und Spiegel" ist ein vielseitig tätiger Betrieb
-        mit einem erfahrenen Mitarbeiterkreis. Das Unternehmen blickt auf eine
+        Unsere Glaserei Glas und Spiegel ist ein vielseitig tätiger Betrieb mit
+        einem erfahrenen Mitarbeiterkreis. Das Unternehmen blickt auf eine
         langjährige Tradition zurück, in der seit den Anfängen der
         Innovationsgedanke immer im Vordergrund stand. Unsere breit gefächerte
         Produkt- und Angebotspalette bietet Ihnen als Kunden hochwertige
