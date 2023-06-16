@@ -9,7 +9,7 @@ export default function Home() {
       <Header />
 
       <StyledImage
-        src="/public/Titelbild.jpg"
+        src="/Titelbild.jpg"
         alt="Glaserei Baatz"
         width={1000}
         height={700}
