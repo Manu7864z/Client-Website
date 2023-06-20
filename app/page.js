@@ -11,7 +11,7 @@ export default function Home() {
     <div>
       <StyledLandingsPage>
         <StyledImage
-          src="/Titelbild.jpg"
+          src="/homepagepicture.jpg"
           alt="Glaserei Baatz"
           width={1000}
           height={700}
