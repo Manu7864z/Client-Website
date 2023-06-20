@@ -1,6 +1,7 @@
 "use client";
 import styled, { css } from "styled-components";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Header() {
   return (
@@ -9,6 +10,11 @@ export default function Header() {
         <li>
           <StyledLink $home href="/">
             Home
+          </StyledLink>
+        </li>
+        <li>
+          <StyledLink $rundumsglas href="/rundumsglas">
+            Rund ums Glas
           </StyledLink>
         </li>
         <li>
@@ -27,6 +33,12 @@ export default function Header() {
           </StyledLink>
         </li>
       </ul>
+      <StyledImage
+        src="/Logo_2022.jpg"
+        alt="Glaserei Baatz Logo"
+        width={200}
+        height={200}
+      />
     </StyledDiv>
   );
 }
@@ -37,6 +49,10 @@ const StyledDiv = styled.div`
   margin: 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 
   ul {
     position: relative;
@@ -90,10 +106,27 @@ const StyledLink = styled(Link)`
       }
     `};
 
-  transition: all 0.2s ease-in-out;
-
   ${(props) =>
     props.$leistungen &&
+    css`
+      &:hover::after {
+        width: 100%;
+        left: 0%;
+      }
+      &::after {
+        position: absolute;
+        transition: 0.3s;
+        content: "";
+        width: 0;
+        left: 50px;
+        bottom: 0;
+        height: 3px;
+        background: #f7f7f7;
+      }
+    `};
+
+  ${(props) =>
+    props.$rundumsglas &&
     css`
       &:hover::after {
         width: 100%;
@@ -148,4 +181,12 @@ const StyledLink = styled(Link)`
         background: #f7f7f7;
       }
     `};
+`;
+
+const StyledImage = styled(Image)`
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 250px;
 `;
