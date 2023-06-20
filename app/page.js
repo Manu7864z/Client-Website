@@ -24,7 +24,7 @@ export default function Home() {
         <StyledArticle>
           <p>
             {" "}
-            Unsere Glaserei <b>"Glas und Spiegel"</b> ist ein vielseitig tätiger
+            Unsere Glaserei <b>Glas und Spiegel</b> ist ein vielseitig tätiger
             Betrieb mit einem erfahrenen Mitarbeiterkreis. Das Unternehmen
             blickt auf eine langjährige Tradition zurück, in der seit den
             Anfängen der Innovationsgedanke immer im Vordergrund stand.
