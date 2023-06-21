@@ -21,6 +21,7 @@ export default function RootLayout({ children }) {
           name="description"
           content="initial-scale=1, width=device-width"
         />
+        <meta name="description" content={metadata.description} />
         <link rel="icon" href="/favicon.ico" />
         <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
       </head>
