@@ -25,9 +25,10 @@ export default function Footer() {
       </div>
       <div>
         <h2>Adresse</h2>
-        <p>Glaserei Baatz</p>
-        <p>Am Seegraben 1</p>
-        <p>03051 Cottbus</p>
+        <p>Glas und Spiegel</p>
+        <p>Inh.: Baatz & Rodewald GbR</p>
+        <p>Berliner Straße 96</p>
+        <p>03046 Cottbus</p>
       </div>
     </StyledFooter>
   );
@@ -44,7 +45,7 @@ const StyledFooter = styled.footer`
   margin: 50px 0 0 0;
   width: 100%;
   height: fit-content;
-  position: relative;
+  position: static;
   bottom: 0;
   left: 0;
   right: 0;
