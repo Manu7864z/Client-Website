@@ -5,21 +5,24 @@ export default function Footer() {
     <StyledFooter>
       <div>
         <h2>Öffnungszeiten</h2>
-        <p>Montag bis Freitag: 8:00 - 17:00 Uhr</p>
-        <p>Samstag: 9:00 - 12:00 Uhr</p>
+        <p>Montag bis Freitag: 8:00 - 16:30 Uhr</p>
+        <p>
+          24h Notdienst (z.B. bei Glasbruch eines Sturmschadens):{" "}
+          <a href="tel: 01723469036">0172 / 3469036</a>
+        </p>
       </div>
       <div>
         <h2>Kontakt</h2>
-        <p>Telefon: 0355 381 81</p>
-        <p>Fax: 0355 381 81</p>
+        <a href="tel: 035523947">Telefon: 0355/23947</a>
+        <p>Fax: 0355/24346</p>
         <p>
           E-Mail:{" "}
           <a
-            href="mailto: musterfrau@xy.com
+            href="mailto: info@glaserei-baatz.com
 
         "
           >
-            musterfrau@xy.com
+            info@glaserei-baatz.com
           </a>
         </p>
       </div>
