@@ -33,12 +33,12 @@ export default function Header() {
           </StyledLink>
         </li>
       </ul>
-      <StyledImage
-        src="/Logo_2022.jpg"
+      {/*  <StyledImage
+        src="/Logo.png"
         alt="Glaserei Baatz Logo"
         width={200}
         height={200}
-      />
+      /> */}
     </StyledDiv>
   );
 }
@@ -185,7 +185,7 @@ const StyledLink = styled(Link)`
 
 const StyledImage = styled(Image)`
   position: absolute;
-  top: 0;
+  top: 200px;
   right: 0;
   height: 100%;
   width: 250px;

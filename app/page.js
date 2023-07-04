@@ -2,11 +2,7 @@
 import Image from "next/image";
 import styled from "styled-components";
 
-import { useState } from "react";
-
 export default function Home() {
-  const [show, setShow] = useState(false);
-
   return (
     <div>
       <StyledLandingsPage>
@@ -27,26 +23,19 @@ export default function Home() {
             Unsere Glaserei <b>Glas und Spiegel</b> ist ein vielseitig tätiger
             Betrieb mit einem erfahrenen Mitarbeiterkreis. Das Unternehmen
             blickt auf eine langjährige Tradition zurück, in der seit den
-            Anfängen der Innovationsgedanke immer im Vordergrund stand.
+            Anfängen der Innovationsgedanke immer im Vordergrund stand. Unsere
+            breit gefächerte Produkt- und Angebotspalette bietet Ihnen als
+            Kunden hochwertige Qualität, die auf der Basis neuester Technologien
+            und langjähriger Erkenntnisse sorgfältig produziert wird. Als
+            Meisterbetrieb bieten wir unseren Kunden eine Vielzahl von
+            Glas-Facharbeiten an. <br /> Dabei wird jedes Projekt ganz
+            individuell, mit maßgeschneiderten Ideen von Menschen, die in ihrem
+            Bereich seit Jahren professionelle Arbeit leisten, betreut.
+            Persönlichkeit, Individualität und kreativer Freiraum stehen bei
+            unserem Arbeiten im Vordergrund. Denn nur so kann perfekte Leistung
+            entstehen, auf die Sie auch in Zukunft bauen können.
+            <br /> <br />
           </p>
-          {show === true && (
-            <p>
-              Unsere breit gefächerte Produkt- und Angebotspalette bietet Ihnen
-              als Kunden hochwertige Qualität, die auf der Basis neuester
-              Technologien und langjähriger Erkenntnisse sorgfältig produziert
-              wird. Als Meisterbetrieb bieten wir unseren Kunden eine Vielzahl
-              von Glas-Facharbeiten an. <br /> Dabei wird jedes Projekt ganz
-              individuell, mit maßgeschneiderten Ideen von Menschen, die in
-              ihrem Bereich seit Jahren professionelle Arbeit leisten, betreut.
-              Persönlichkeit, Individualität und kreativer Freiraum stehen bei
-              unserem Arbeiten im Vordergrund. Denn nur so kann perfekte
-              Leistung entstehen, auf die Sie auch in Zukunft bauen können.
-            </p>
-          )}
-          <StyledButton onClick={() => setShow(!show)}>
-            {show === false ? "mehr Anzeigen" : "weniger Anzeigen"}
-          </StyledButton>
-          <br /> <br />
         </StyledArticle>
       </StyledSection>
     </div>
@@ -88,36 +77,6 @@ const StyledLandingsPage = styled.div`
   position: relative;
 `;
 
-const StyledDetails = styled.details`
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  border: 2px solid #271f30;
-  padding: 30px;
-  width: 50vw;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  overflow: scroll;
-
-  p {
-    font-size: 1.3rem;
-    font-weight: 400;
-    word-wrap: break-word;
-    display: block;
-
-    margin: 0;
-    padding: 10px 0 10px 0;
-  }
-`;
-
-const StyledSummary = styled.summary`
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
-`;
-
 const StyledSection = styled.section`
   display: flex;
   width: 80%;
@@ -143,6 +102,11 @@ const StyledArticle = styled.article`
   align-items: center;
   justify-content: center;
   position: relative;
+  border: 2px solid #271f30;
+  border-radius: 10px;
+  padding: 30px;
+  background: whitesmoke;
+  margin: 0 0 30px 0;
 `;
 
 const StyledButton = styled.button`

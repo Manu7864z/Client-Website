@@ -73,11 +73,6 @@ const StyledDiv = styled.div`
   width: 70vw;
   height: fit-content;
   margin: 100px 0 100px 0;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
   position: relative;
   left: 15vw;
   top: 0;
@@ -92,12 +87,6 @@ const StyledSection = styled.section`
   align-items: flex-start;
   width: 100%;
   height: fit-content;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
   position: relative;
 `;
 
@@ -108,33 +97,6 @@ const StyledArticle = styled.article`
   align-items: flex-start;
   width: 100%;
   height: fit-content;
-  margin: 0;
-  padding: 0;
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.5;
-  letter-spacing: 0.00938em;
   position: relative;
   word-wrap: break-word;
-
-  h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.334;
-    letter-spacing: 0em;
-  }
-
-  p {
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-  }
-
-  b {
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-  }
 `;
