@@ -79,45 +79,14 @@ const StyledDiv = styled.div`
   }
 
   h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 2rem;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
     align-self: flex-start;
   }
 
   h3 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1.75rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
     align-self: flex-start;
   }
 
   h4 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
     align-self: flex-start;
-  }
-
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 1rem;
-    font-weight: 300;
-    line-height: 1.5;
-    letter-spacing: 0.00938em;
-  }
-
-  b {
-    font-weight: 500;
   }
 `;

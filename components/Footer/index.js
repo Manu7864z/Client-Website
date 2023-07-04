@@ -33,6 +33,15 @@ export default function Footer() {
         <p>Berliner Straße 96</p>
         <p>03046 Cottbus</p>
       </div>
+      <div>
+        <h2>Impressum</h2>
+        <p>
+          <a href="/impressum">Impressum</a>
+        </p>
+        <p>
+          <a href="/datenschutz">Datenschutz</a>
+        </p>
+      </div>
     </StyledFooter>
   );
 }
@@ -52,15 +61,13 @@ const StyledFooter = styled.footer`
   bottom: 0;
   left: 0;
   right: 0;
-  font-size: 1rem;
-  font-weight: 300;
 
   div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    width: 30%;
+    align-items: center;
+    width: 20%;
     height: fit-content;
     margin: 0;
     padding: 0;
@@ -71,6 +78,7 @@ const StyledFooter = styled.footer`
     font-weight: 500;
     margin: 0;
     padding: 0;
+    align-self: flex-start;
   }
 
   p {
@@ -78,11 +86,13 @@ const StyledFooter = styled.footer`
     font-weight: 300;
     margin: 0;
     padding: 0;
+    align-self: flex-start;
   }
 
   a {
     color: white;
     text-decoration: none;
+    align-self: flex-start;
 
     &:hover {
       color: #ccc;
