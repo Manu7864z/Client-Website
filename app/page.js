@@ -16,8 +16,8 @@ export default function Home() {
         <StyledH1>Glaserei Baatz</StyledH1>
       </StyledLandingsPage>
       <StyledSection>
-        <h2>Über uns</h2>
         <StyledArticle>
+          <h2>Über uns</h2>
           <p>
             {" "}
             Unsere Glaserei <b>Glas und Spiegel</b> ist ein vielseitig tätiger
@@ -26,18 +26,53 @@ export default function Home() {
             Anfängen der Innovationsgedanke immer im Vordergrund stand. Unsere
             breit gefächerte Produkt- und Angebotspalette bietet Ihnen als
             Kunden hochwertige Qualität, die auf der Basis neuester Technologien
-            und langjähriger Erkenntnisse sorgfältig produziert wird. Als
-            Meisterbetrieb bieten wir unseren Kunden eine Vielzahl von
-            Glas-Facharbeiten an. <br /> Dabei wird jedes Projekt ganz
-            individuell, mit maßgeschneiderten Ideen von Menschen, die in ihrem
-            Bereich seit Jahren professionelle Arbeit leisten, betreut.
-            Persönlichkeit, Individualität und kreativer Freiraum stehen bei
-            unserem Arbeiten im Vordergrund. Denn nur so kann perfekte Leistung
-            entstehen, auf die Sie auch in Zukunft bauen können.
+            und langjähriger Erkenntnisse sorgfältig produziert wird. <br />{" "}
+            <br />
+            Als Meisterbetrieb bieten wir unseren Kunden eine Vielzahl von
+            Glas-Facharbeiten an. Dabei wird jedes Projekt ganz individuell, mit
+            maßgeschneiderten Ideen von Menschen, die in ihrem Bereich seit
+            Jahren professionelle Arbeit leisten, betreut. Persönlichkeit,
+            Individualität und kreativer Freiraum stehen bei unserem Arbeiten im
+            Vordergrund. Denn nur so kann perfekte Leistung entstehen, auf die
+            Sie auch in Zukunft bauen können.
             <br /> <br />
           </p>
         </StyledArticle>
+        <StyledSectionImageContainer>
+          <StyledSectionImage src="/firma.jpg" width={400} height={350} />
+          <StyledSectionImage src="/firma2.jpg" width={400} height={350} />
+        </StyledSectionImageContainer>
       </StyledSection>
+      <StyledSection2>
+        <StyledSectionImageContainer>
+          <StyledSectionImage src="/Dusche.jpg" width={380} height={320} />
+          <StyledSectionImage
+            src="/bleiverglasung.jpg"
+            width={380}
+            height={320}
+          />
+        </StyledSectionImageContainer>
+        <StyledArticle2>
+          <h2>Wohnen mit Glas</h2>
+          <p>
+            Glas spielt in der Inneneinrichtung eine immer größere Rolle.
+            Gegenüber anderen Rohstoffen weist es klare Vorteile auf: Glas
+            besitzt eine hohe Lichtdurchlässigkeit und ist aufgrund der glatten
+            Oberfläche einfach zu pflegen, wodurch es ebenfalls einen hohen
+            Hygienestandard bietet. <br /> <br />
+            Neben einer einfachen transparenten Scheibe gibt es zur Gestaltung
+            nicht nur andere Glassorten mit Struktur oder Tönung, sondern auch
+            die Möglichkeit einer Sandstrahlveredlung oder einer anderen
+            Farbgebung durch eine Lackierung/einem Druck. <br /> <br />
+            Durch diese Vielseitigkeit lässt es sich an jeden Einrichtungsstil
+            anpassen. Sehen Sie sich im Folgenden einige unserer Referenzen an
+            und lassen Sie sich mit Ihren Vorstellungen bei uns direkt vom
+            Fachmann beraten. Wir finden eine Lösung für Ihr Vorhaben, denn wir
+            fertigen alles individuell nach Ihren örtlichen Gegebenheiten und
+            Vorstellungen an.
+          </p>
+        </StyledArticle2>
+      </StyledSection2>
     </div>
   );
 }
@@ -46,18 +81,12 @@ const StyledImage = styled(Image)`
   width: 100vw;
   height: 80vh;
   object-fit: cover;
-  margin: 80px 0 0 0;
-  background-attachment: fixed;
-  background-position: center;
-`;
-/* const Parallax = styled.div`
-  background-image: url("/public/homepagepicture.jpg");
-  height: 100vh;
+  margin: 80px 0 16px 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-`; */
+`;
 
 const StyledH1 = styled.h1`
   font-size: 5rem;
@@ -66,7 +95,7 @@ const StyledH1 = styled.h1`
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 89%;
+  top: 87%;
   right: 3%;
 `;
 const StyledLandingsPage = styled.div`
@@ -80,50 +109,66 @@ const StyledLandingsPage = styled.div`
 const StyledSection = styled.section`
   display: flex;
   width: 80%;
-  margin: 0 auto;
-  flex-direction: column;
+  margin: 32px auto;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: whitesmoke;
   padding: 30px;
-
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 0;
-    padding: 10px 0 10px 0;
-    align-self: flex-start;
-  }
+  position: relative;
 `;
 
 const StyledArticle = styled.article`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 600px;
+  line-height: 1.2;
   position: relative;
-  border: 2px solid #271f30;
-  border-radius: 10px;
   padding: 30px;
   background: whitesmoke;
-  margin: 0 0 30px 0;
+  margin: 16px 0 32px 0;
 `;
 
-const StyledButton = styled.button`
-  font-size: 1.3rem;
-  font-weight: 700;
-  margin: 0;
-  padding: 10px;
-  background: none;
-  color: black;
-  border: 2px solid #271f30;
+const StyledSectionImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  line-height: 1.2;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
-  align-self: flex-start;
+  margin: 16px 0 32px 0;
+  padding: 0 30px 0 30px;
+`;
 
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+const StyledSectionImage = styled(Image)`
+  margin: 0 0 16px 0;
+  border-radius: 10px;
+  background: rgba(8, 8, 8, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+`;
 
-  &:hover {
-    background: #abb0ac;
-  }
+const StyledSection2 = styled.section`
+  display: flex;
+  width: 80%;
+  margin: 32px auto;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+`;
+
+const StyledArticle2 = styled.article`
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  line-height: 1.2;
+  position: relative;
+  margin: 16px 0 32px 0;
+  padding: 0 30px 0 30px;
 `;
