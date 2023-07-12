@@ -4,6 +4,12 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Header() {
+  const handleScroll = () => {
+    const element = document.getElementById("WohenMitGlas");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <StyledDiv>
       <ul>
@@ -23,32 +29,26 @@ export default function Header() {
           </StyledLink>
         </li>
         <li>
-          <StyledLink $referenzen href="/">
-            Referenzen
-          </StyledLink>
-        </li>
-        <li>
           <StyledLink $kontakt href="/">
             Kontakt
           </StyledLink>
         </li>
       </ul>
-      {/*  <StyledImage
+      <StyledImage
         src="/Logo.png"
         alt="Glaserei Baatz Logo"
-        width={200}
-        height={200}
-      /> */}
+        width={500}
+        height={500}
+      />
     </StyledDiv>
   );
 }
 
 const StyledDiv = styled.div`
-  background: #333;
+  background: white;
   padding: 10px;
   margin: 0;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-  border: 1px solid black;
   position: fixed;
   top: 0;
   width: 100%;
@@ -72,7 +72,7 @@ const StyledDiv = styled.div`
 `;
 const StyledLink = styled(Link)`
   display: block;
-  color: white;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -84,7 +84,7 @@ const StyledLink = styled(Link)`
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    background-color: #111;
+    background-color: #f7f7f7;
   }
 
   ${(props) =>
@@ -102,7 +102,7 @@ const StyledLink = styled(Link)`
         left: 50px;
         bottom: 0;
         height: 3px;
-        background: #f7f7f7;
+        background: var(--color-tertiary);
       }
     `};
 
@@ -121,7 +121,7 @@ const StyledLink = styled(Link)`
         left: 50px;
         bottom: 0;
         height: 3px;
-        background: #f7f7f7;
+        background: var(--color-tertiary);
       }
     `};
 
@@ -140,7 +140,7 @@ const StyledLink = styled(Link)`
         left: 50px;
         bottom: 0;
         height: 3px;
-        background: #f7f7f7;
+        background: var(--color-tertiary);
       }
     `};
 
@@ -159,7 +159,7 @@ const StyledLink = styled(Link)`
         left: 50px;
         bottom: 0;
         height: 3px;
-        background: #f7f7f7;
+        background: var(--color-tertiary);
       }
     `};
 
@@ -178,15 +178,15 @@ const StyledLink = styled(Link)`
         left: 50px;
         bottom: 0;
         height: 3px;
-        background: #f7f7f7;
+        background: var(--color-tertiary);
       }
     `};
 `;
 
 const StyledImage = styled(Image)`
   position: absolute;
-  top: 200px;
-  right: 0;
+  right: 20px;
+  top: 5px;
   height: 100%;
-  width: 250px;
+  width: 200px;
 `;
