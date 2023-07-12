@@ -23,11 +23,11 @@ export default function Home() {
             Unsere Glaserei <b>Glas und Spiegel</b> ist ein vielseitig tätiger
             Betrieb mit einem erfahrenen Mitarbeiterkreis. Das Unternehmen
             blickt auf eine langjährige Tradition zurück, in der seit den
-            Anfängen der Innovationsgedanke immer im Vordergrund stand. Unsere
-            breit gefächerte Produkt- und Angebotspalette bietet Ihnen als
-            Kunden hochwertige Qualität, die auf der Basis neuester Technologien
-            und langjähriger Erkenntnisse sorgfältig produziert wird. <br />{" "}
-            <br />
+            Anfängen der Innovationsgedanke immer im Vordergrund stand. <br />{" "}
+            <br /> Unsere breit gefächerte Produkt- und Angebotspalette bietet
+            Ihnen als Kunden hochwertige Qualität, die auf der Basis neuester
+            Technologien und langjähriger Erkenntnisse sorgfältig produziert
+            wird. <br /> <br />
             Als Meisterbetrieb bieten wir unseren Kunden eine Vielzahl von
             Glas-Facharbeiten an. Dabei wird jedes Projekt ganz individuell, mit
             maßgeschneiderten Ideen von Menschen, die in ihrem Bereich seit
@@ -52,7 +52,7 @@ export default function Home() {
             height={320}
           />
         </StyledSectionImageContainer>
-        <StyledArticle2>
+        <StyledArticle2 id="WohnenMitGlas">
           <h2>Wohnen mit Glas</h2>
           <p>
             Glas spielt in der Inneneinrichtung eine immer größere Rolle.
@@ -79,7 +79,7 @@ export default function Home() {
 
 const StyledImage = styled(Image)`
   width: 100vw;
-  height: 80vh;
+  height: 90vh;
   object-fit: cover;
   margin: 80px 0 16px 0;
   background-attachment: fixed;
@@ -108,6 +108,7 @@ const StyledLandingsPage = styled.div`
 
 const StyledSection = styled.section`
   display: flex;
+  height: 100vh;
   width: 80%;
   margin: 32px auto;
   flex-direction: row;
@@ -126,6 +127,10 @@ const StyledArticle = styled.article`
   padding: 30px;
   background: whitesmoke;
   margin: 16px 0 32px 0;
+
+  b {
+    color: var(--color-tertiary);
+  }
 `;
 
 const StyledSectionImageContainer = styled.div`
@@ -155,6 +160,7 @@ const StyledSectionImage = styled(Image)`
 const StyledSection2 = styled.section`
   display: flex;
   width: 80%;
+  height: 100vh;
   margin: 32px auto;
   flex-direction: row;
   justify-content: flex-end;
@@ -170,5 +176,5 @@ const StyledArticle2 = styled.article`
   line-height: 1.2;
   position: relative;
   margin: 16px 0 32px 0;
-  padding: 0 30px 0 30px;
+  padding: 30px;
 `;
