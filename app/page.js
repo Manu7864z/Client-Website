@@ -86,6 +86,9 @@ const StyledImage = styled(Image)`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-bottom: 64px;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+  mix-blend-mode: screen;
 `;
 
 const StyledH1 = styled.h1`
@@ -95,7 +98,7 @@ const StyledH1 = styled.h1`
   margin: 0;
   padding: 0;
   position: absolute;
-  top: 87%;
+  top: 70%;
   right: 3%;
 `;
 const StyledLandingsPage = styled.div`
@@ -108,14 +111,14 @@ const StyledLandingsPage = styled.div`
 
 const StyledSection = styled.section`
   display: flex;
-  height: 100vh;
+  height: fit-content;
   width: 80%;
   margin: 32px auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 30px;
   position: relative;
+  padding: 64px 0;
 `;
 
 const StyledArticle = styled.article`
@@ -124,9 +127,15 @@ const StyledArticle = styled.article`
   width: 600px;
   line-height: 1.2;
   position: relative;
-  padding: 30px;
-  background: whitesmoke;
-  margin: 16px 0 32px 0;
+  padding: 16px 32px;
+  border-radius: 10px;
+  margin: 32px 0;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   b {
     color: var(--color-tertiary);
@@ -160,12 +169,12 @@ const StyledSectionImage = styled(Image)`
 const StyledSection2 = styled.section`
   display: flex;
   width: 80%;
-  height: 100vh;
+  height: fit-content;
   margin: 32px auto;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  padding: 30px;
+  padding: 64px 0 0 0;
   position: relative;
 `;
 
@@ -175,6 +184,13 @@ const StyledArticle2 = styled.article`
   width: 600px;
   line-height: 1.2;
   position: relative;
-  margin: 16px 0 32px 0;
-  padding: 30px;
+  margin: 32px 0;
+  border-radius: 10px;
+  padding: 16px 32px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
