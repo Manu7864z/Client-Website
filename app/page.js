@@ -113,7 +113,7 @@ const StyledSection = styled.section`
   display: flex;
   height: fit-content;
   width: 80%;
-  margin: 32px auto;
+  margin: 16px auto;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -129,8 +129,8 @@ const StyledArticle = styled.article`
   position: relative;
   padding: 16px 32px;
   border-radius: 10px;
-  margin: 32px 0;
-  background: rgba(255, 255, 255, 0.25);
+  margin: 16px 0;
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
@@ -170,7 +170,7 @@ const StyledSection2 = styled.section`
   display: flex;
   width: 80%;
   height: fit-content;
-  margin: 32px auto;
+  margin: 16px auto;
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
@@ -184,10 +184,9 @@ const StyledArticle2 = styled.article`
   width: 600px;
   line-height: 1.2;
   position: relative;
-  margin: 32px 0;
-  border-radius: 10px;
+  margin: 16px 0;
   padding: 16px 32px;
-  background: rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.7);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);

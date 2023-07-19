@@ -4,6 +4,8 @@ import "./globals.css";
 import StyledComponentsRegistry from "@/lib/registry";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Popup from "@/components/Popup.js";
+import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +15,8 @@ const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const [popupOpen, setPopupOpen] = useState(false);
+
   return (
     <html lang="de">
       <head>
@@ -27,7 +31,8 @@ export default function RootLayout({ children }) {
       </head>
       <body className={inter.className}>
         <StyledComponentsRegistry>
-          <Header />
+          <Header onClick={setPopupOpen} />
+          {popupOpen && <Popup onClose={setPopupOpen} />}
           {children}
           <Footer />
         </StyledComponentsRegistry>

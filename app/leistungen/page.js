@@ -72,21 +72,39 @@ const StyledDiv = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 70vw;
+    width: 80%;
     height: fit-content;
     margin: 0;
     padding: 10px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  p {
+    width: 100%;
+    margin: 0;
+    padding: 16px 32px;
+    text-align: justify;
   }
 
   h2 {
     align-self: flex-start;
+    padding: 16px 32px;
   }
 
   h3 {
     align-self: flex-start;
+    padding: 16px 32px;
   }
 
   h4 {
     align-self: flex-start;
+    padding: 16px 32px;
   }
 `;

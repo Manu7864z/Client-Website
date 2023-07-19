@@ -25,22 +25,22 @@ export default function Rundumsglas() {
           </p>
           <StyledImageSection>
             <StyledImage
-              src="/Ornamentglas1.png"
+              src="/Floatglas1.jpg"
               height={200}
               width={200}
-              alt="Ornamentglas"
+              alt="Floatglas"
             />
             <StyledImage
-              src="/Ornamentglas2.png"
+              src="/Floatglas2.jpg"
               height={200}
               width={200}
-              alt="Ornamentglas"
+              alt="Floatglas"
             />
             <StyledImage
-              src="/Ornamentglas3.png"
+              src="/Floatglas3.jpg"
               height={200}
               width={200}
-              alt="Ornamentglas"
+              alt="Floatglas"
             />
           </StyledImageSection>
         </StyledArticle>
@@ -131,25 +131,26 @@ const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 70vw;
-  height: fit-content;
+  align-items: center;
+  width: 100%
+  height: 100%;
   margin: 100px 0 100px 0;
-  position: relative;
-  left: 15vw;
-  top: 0;
-  bottom: 0;
-  right: 0;
 `;
 
 const StyledSection = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
   height: fit-content;
   position: relative;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 const StyledImageSection = styled.section`
@@ -160,35 +161,33 @@ const StyledImageSection = styled.section`
   width: 100%;
   height: 300px;
   position: relative;
-  background: rgba(11, 102, 106, 0.4);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(8.5px);
-  -webkit-backdrop-filter: blur(8.5px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
-  margin: 16px 0;
 `;
 
 const StyledArticle = styled.article`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
   height: fit-content;
   position: relative;
   text-align: justify;
   word-wrap: break-word;
-  margin: 16px 32px 16px 32px;
+  margin: 16px 16px;
+  padding: 8px 32px;
+
+  h3 {
+    text-decoration: underline;
+  }
 `;
 
 const StyledImage = styled(Image)`
   width: 250px;
   height: 200px;
   object-fit: cover;
-  margin: 16px 32px 16px 32px;
+  margin: 16px 16px 16px 16px;
   position: relative;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   background: #d1d8ec;
 `;
