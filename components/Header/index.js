@@ -3,13 +3,11 @@ import styled, { css } from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Header() {
-  const handleScroll = () => {
-    const element = document.getElementById("WohenMitGlas");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
+export default function Header({ onClick }) {
+  const handleClick = () => {
+    onClick(true);
   };
+
   return (
     <StyledDiv>
       <ul>
@@ -29,9 +27,9 @@ export default function Header() {
           </StyledLink>
         </li>
         <li>
-          <StyledLink $kontakt href="/">
+          <StyledButton $kontakt href="/" onClick={handleClick}>
             Kontakt
-          </StyledLink>
+          </StyledButton>
         </li>
       </ul>
       <StyledImage
@@ -162,6 +160,32 @@ const StyledLink = styled(Link)`
         background: var(--color-tertiary);
       }
     `};
+`;
+
+const StyledImage = styled(Image)`
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  height: 100%;
+  width: 200px;
+`;
+
+const StyledButton = styled.button`
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.00938em;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    background-color: #f7f7f7;
+  }
 
   ${(props) =>
     props.$kontakt &&
@@ -181,12 +205,4 @@ const StyledLink = styled(Link)`
         background: var(--color-tertiary);
       }
     `};
-`;
-
-const StyledImage = styled(Image)`
-  position: absolute;
-  right: 20px;
-  top: 5px;
-  height: 100%;
-  width: 200px;
 `;
