@@ -5,7 +5,7 @@ export default function Impressum() {
   return (
     <>
       <StyledSection>
-        <h2>Datenschutzerklärung</h2>
+        <h2>Impressum</h2>
         <p> Glas und Spiegel Cottbus </p>
         <p> Inh.: Baatz & Rodewald GbR </p>
         <p> Berliner Straße 96 </p>
