@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -35,12 +36,8 @@ export default function Footer() {
       </div>
       <div>
         <h2>Impressum</h2>
-        <p>
-          <a href="/impressum">Impressum</a>
-        </p>
-        <p>
-          <a href="/datenschutz">Datenschutz</a>
-        </p>
+        <Link href="/impressum">Impressum</Link>
+        <Link href="/datenschutz">Datenschutz</Link>
       </div>
     </StyledFooter>
   );
