@@ -88,7 +88,6 @@ const StyledImage = styled(Image)`
   background-size: cover;
   margin-bottom: 64px;
   clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
-  mix-blend-mode: screen;
 `;
 
 const StyledH1 = styled.h1`
