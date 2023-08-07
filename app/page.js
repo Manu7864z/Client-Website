@@ -87,6 +87,7 @@ const StyledImage = styled(Image)`
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 64px;
+  border-radius: 0 0 100px 100px;
   /*  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%); */
 `;
 
